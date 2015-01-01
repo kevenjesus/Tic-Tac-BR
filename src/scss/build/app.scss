@@ -1,5 +1,7 @@
 /* imports */
 @import "../variables.scss";
+@import "../placeholders.scss";
+@import "../animate.scss";
 
 /* reset */
 *{
@@ -28,7 +30,7 @@ img{
 	background:#B96153;
 	box-shadow: 0 1px 10px 0 #999;
 	padding:5px 0;
-	text-align: center;
+	@extend %align-center;
 	> h1{
 		font-family: tahoma,sans-serif;
 		font-size:24px;
@@ -51,10 +53,8 @@ img{
     background:#fff;
     border:$app-border-size solid $app-border-color;
     margin-top: 10px;
-    margin-left:auto;
-    margin-right: auto;
+	@extend %align-center;
     box-shadow: 0 2px 15px 0 #999;
-
     .row{
 	    height:100px;
 	    padding:0 10px;
@@ -75,9 +75,7 @@ img{
 	    border-right:1px solid $app-border-color;
 	    float:left;
 	    background:#f2f2f2;
-	  	margin-left:auto;
-	  	margin-right: auto;
-	  	text-align: center;
+	  	@extend %align-center;
 	  	img{
 	  		max-width: 90%;
 	  		margin-top: 10px;
@@ -97,80 +95,13 @@ img{
 	left:0;
 	bottom:0;
 	.box{
-		text-align: center;
+		@extend %align-center;
 	}
-}
-
-@keyframes tada {
-	0% {
-		transform: scale3d(1, 1, 1);
-	}
-
-	10%, 20% {
-		transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-	}
-
-	30%, 50%, 70%, 90% {
-		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-	}
-
-	40%, 60%, 80% {
-		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-	}
-
-	100% {
-		transform: scale3d(1, 1, 1);
-	}
-}
-
-@keyframes bounceIn {
-	0%, 20%, 40%, 60%, 80%, 100% {
-		transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-	}
-
-	0% {
-		opacity: 0;
-		transform: scale3d(.3, .3, .3);
-	}
-	20% {
-		transform: scale3d(1.1, 1.1, 1.1);
-	}
-
-	40% {
-		transform: scale3d(.9, .9, .9);
-	}
-
-	60% {
-	opacity: 1;
-		transform: scale3d(1.03, 1.03, 1.03);
-	}
-
-	80% {
-		transform: scale3d(.97, .97, .97);
-	}
-
-	100% {
-		opacity: 1;
-		transform: scale3d(1, 1, 1);
-	}
-}
-
-.tada {
-	animation-name: tada; 
-	animation-duration: 1s;
-	animation-fill-mode: both;
-}
-
-.bounceIn {
-	animation-name: bounceIn;
-	animation-duration: .75s;
-	animation-duration: 1s;
-	animation-fill-mode: both;
 }
 
 .footer{
 	padding:10px 0;
-	text-align: center;
+	@extend %align-center;
 	> p{
 		font-size:10px;
 		color:#666;
