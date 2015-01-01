@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="author" content="Keven Jesus">
+	<meta name="description" content="Este é um jogo da velha com base em eleições de 2014 no Brasil, tendo como personagens a atual presidente Dilma Roussef e ex-candidato Aécio Neves.">
+	<title>Firefox App</title>
+	<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+	<header class="header">
+	<h1>Tic-Tac-BR</h1>
+	<p>Jogo da velha entre Dilma e Aécio 2014.</p>
+	</header>
+
+	<article class="game">
+            <div class="row first">
+                <div class="inner" data-cel="0"></div>
+                <div class="inner" data-cel="1"></div>
+                <div class="inner" data-cel="2"></div>
+            </div>
+            <div class="row">
+                <div class="inner" data-cel="3"></div>
+                <div class="inner" data-cel="4"></div>
+                <div class="inner" data-cel="5"></div>
+            </div>
+            <div class="row last">
+                <div class="inner" data-cel="6"></div>
+                <div class="inner" data-cel="7"></div>
+                <div class="inner" data-cel="8"></div>
+            </div>
+    </article>
+
+    <article class="winner hidden">
+    	<div class="box">
+    		<a href="#" class="again"></a>
+    	</div>
+    </article>
+
+    <footer class="footer">
+    	<p>Software open source | Developer by <a href="//github.com/kevenjesus">Keven Jesus</a></p>
+    </footer>
+	
+	<!--
+		jQuery custom using projects.jga.me/jquery-builder/
+		options: deprecated, dimensions, event-alias
+		Total: 64kb minify :)
+	-->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
