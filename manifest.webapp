@@ -1,7 +1,7 @@
 {
 	"version":"1.0",
 	"name":"Tic-Tac-BR",
-	"launch_path":"index.html",
+	"launch_path":"/index.html",
 	"description":"This is a Tic-Tac-Toe based on 2014 elections in Brazil, having as characters the current President Dilma Roussef and former candidate Aécio Neves.",
 	"icons":{
 		"16": "/assets/icons/16.png",
